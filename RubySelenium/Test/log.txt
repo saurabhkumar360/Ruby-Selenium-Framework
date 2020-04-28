@@ -1,0 +1,5 @@
+# Logfile created on 2020-04-26 10:03:13 +0530 by logger.rb/56815
+I, [2020-04-26T10:03:42.413042 #21832]  INFO -- : Start Browser
+I, [2020-04-26T10:07:22.860021 #13352]  INFO -- : Start Browser
+I, [2020-04-26T10:07:26.364257 #13352]  INFO -- : Search For iphone
+I, [2020-04-26T10:07:27.437348 #13352]  INFO -- : Verify the result
