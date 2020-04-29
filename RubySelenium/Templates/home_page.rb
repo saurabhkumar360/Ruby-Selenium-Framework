@@ -9,6 +9,10 @@ class OPENCART
   SEARCH_BOX          = { css: 'div.input-group > input'  }
   SEARCH_BOX_BUTTON   = {css:'span.input-group-btn > button'}
   TOP_SEARCH_RESULT   = {css:'h4:nth-child(1) > a:nth-child(1)'}
+  DesktopTab          = {xpath: "(//a[contains(text(),'Desktops')])[1]"}
+  ShowAllComponents   = {xpath: "(//*[@class='see-all'])[1]"}
+  SearchedItem        = {css: "div.caption>h4>a"}
+  TotalSearchedItems  = {xpath: "//a[contains(text(),'Desktops ')]"}
 
 #-------------------------------Locators for header section------------------------------------------
 
@@ -68,6 +72,8 @@ class OPENCART
   end
 
 def start_browser
+  $helperpage = HELPER.new(@driver);
+  $helperpage.maximize_window
   @file = File.read('../Data/data.json')
   @data_hash = JSON.parse(@file)
   home_page = @data_hash['url_homepage']
@@ -166,5 +172,38 @@ matchText(driver.find_element(SHOW_ALL_MP3PLAYERS),"Show All MP3 Players")
          else
       puts(" Header Elements with text mismatch for #{element.text}");
     end
+  end
+  
+  def hoverOnDesktopBtnandClick
+    $helperpage.hoverOnElement($helperpage.findElement(DesktopTab))
+    $helperpage.time_out
+    driver.find_element(ShowAllComponents).click
+  end
+
+  def getTotalNumOfItems
+    $totalcount = $helperpage.getTotalCount(SearchedItem)
+     puts ("Total number of Items is ..#{$totalcount}")
+  end
+
+  def verifySearchItems
+   puts count = $helperpage.getTextFromElement(TotalSearchedItems)
+   puts $totalcount = $totalcount+1
+   itemcount = $totalcount.to_s
+   puts m = count.index("(")
+   puts n = count.index(")")
+   puts str = count.byteslice(m,n)
+
+   if str.include?(itemcount)
+     print "total count is match\n"
+   else
+     print "total count is mismatch\n"
+   end
+  end
+
+  def getTextForALLElement()
+        allItems =  $helperpage.findElements(SearchedItem)
+        allItems.each do |ele|
+          puts ele.text
+        end
   end
 end

@@ -15,3 +15,15 @@ page.search_for('iphone')
 
 puts ('Verify the result')
 page.search_result_present?('iphone')
+
+puts ('Hover on Desktop Tab')
+page.hoverOnDesktopBtnandClick
+
+puts('Get total number of count of search items')
+page.getTotalNumOfItems
+
+puts('Verify Search items')
+page.verifySearchItems
+
+puts('Print each item name:')
+page.getTextForALLElement

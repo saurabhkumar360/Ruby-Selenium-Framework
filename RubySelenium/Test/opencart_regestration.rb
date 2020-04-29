@@ -16,7 +16,7 @@ puts('Start Browser')
 page.start_browser
 
 puts('Navigate to registration page')
-page.navigate_to_registration
+#page.navigate_to_registration
 
 puts('Verify the page title')
 page.verify_page_title
