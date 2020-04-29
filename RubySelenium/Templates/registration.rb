@@ -6,7 +6,7 @@ class REGISTRATION
   MY_ACCOUNT          = { css: 'a.dropdown-toggle > span.hidden-xs'}
   REGISTER            = { css: '.dropdown-menu-right li:nth-child(1) > a'}
   PAGE_TITLE          = { xpath: "//h1[contains(text(),'Register Account')]"}
-#------Your Personal Details-----------------------------------------------------
+#------Your Personal Details----------
   FIRST_NAME          = { xpath: "//input[@id='input-firstname']"}
   LAST_NAME           = { xpath: "//input[@id='input-lastname']"}
   EMAIL               = { xpath: "//input[@id='input-email']"}
