@@ -55,7 +55,7 @@ class CONTACT
     driver.find_element(NAME).send_keys input_value
     driver.find_element(EMAIL).send_keys email_value
     driver.find_element(ENQUIRY).send_keys enquiry_value
-    driver.find_element(PHONE_ICON).click
+    driver.find_element(SUBMIT).click
   end
 
   end
