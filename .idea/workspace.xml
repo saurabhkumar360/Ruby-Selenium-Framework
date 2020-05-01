@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1529341e-0e3f-4020-b033-c4c6a32b7608" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/RubySelenium.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/RubySelenium.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RubySelenium/Helper/helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/RubySelenium/Helper/helper.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RubySelenium/Templates/home_page.rb" beforeDir="false" afterPath="$PROJECT_DIR$/RubySelenium/Templates/home_page.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RubySelenium/Test/opencart_home_page.rb" beforeDir="false" afterPath="$PROJECT_DIR$/RubySelenium/Test/opencart_home_page.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RubySelenium/Test/opencart_regestration.rb" beforeDir="false" afterPath="$PROJECT_DIR$/RubySelenium/Test/opencart_regestration.rb" afterDir="false" />
     </list>
     <ignored path="RubySelenium.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -55,19 +48,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home_page.rb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="home_page.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/RubySelenium/Templates/home_page.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
+            <state relative-caret-position="-1496">
               <caret line="14" column="68" lean-forward="true" selection-start-line="14" selection-start-column="68" selection-end-line="14" selection-end-column="68" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="opencart_home_page.rb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="opencart_home_page.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RubySelenium/Test/opencart_home_page.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
+            <state relative-caret-position="68">
               <caret line="16" column="37" lean-forward="true" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
             </state>
           </provider>
@@ -120,10 +113,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="32" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="x" value="-7" />
+    <option name="y" value="2" />
+    <option name="width" value="1378" />
+    <option name="height" value="733" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -288,24 +281,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1587795389138</updated>
-      <workItem from="1588148487590" duration="553000" />
+      <workItem from="1588148487590" duration="1577000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="553000" />
+    <option name="totallyTimeSpent" value="1577000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="32" width="1382" height="744" extended-state="0" />
+    <frame x="-7" y="2" width="1378" height="733" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27598828" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2767988" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4610493" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.46925566" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
@@ -666,13 +659,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RubySelenium/Templates/home_page.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="14" column="68" lean-forward="true" selection-start-line="14" selection-start-column="68" selection-end-line="14" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/RubySelenium/Test/opencart_regestration.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="124">
@@ -682,8 +668,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/RubySelenium/Test/opencart_home_page.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
+        <state relative-caret-position="68">
           <caret line="16" column="37" lean-forward="true" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RubySelenium/Templates/home_page.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1496">
+          <caret line="14" column="68" lean-forward="true" selection-start-line="14" selection-start-column="68" selection-end-line="14" selection-end-column="68" />
         </state>
       </provider>
     </entry>
