@@ -10,56 +10,6 @@ class OPENCART
   SEARCH_BOX_BUTTON   = {css:'span.input-group-btn > button'}
   TOP_SEARCH_RESULT   = {css:'h4:nth-child(1) > a:nth-child(1)'}
 
-#-------------------------------Locators for header section------------------------------------------
-
-  DESKTOP             =  { xpath: "//a[text()='Desktops']"}
-  LAPTOPS            =  { xpath:"//a[text()='Laptops & Notebooks']"}
-  COMPONENTS          =  { xpath:"//a[text()='Components']"}
-  TABLETS             =  { xpath:"//a[text()='Tablets']"}
-  SOFTWARE            =  { xpath:"//a[text()='Software']"}
-  PHONE              =  { xpath:"//a[text()='Phones & PDAs']"}
-  CAMERA              =  { xpath:"//a[text()='Cameras']"}
-  MP3                 =  { xpath:"//a[text()='MP3 Players']"}
-
-#Desktop hover:
-  PC                   =  { xpath:"//a[contains(text(),'PC')]"}
-  MAC                  =  { xpath:"//a[contains(text(),'Mac')]"}
-  SHOW_ALL_DESKTOPS    =  { xpath:"//a[text()='Show All Desktops']"}
-
-#Laptops & Notebooks hover
-  MACS                 =  { xpath:"//a[contains(text(),'Macs')]"}
-  WINDOWS              =  { xpath:"//a[contains(text(),'Windows')]"}
-  SHOW_ALL_LAPTOPS=  { xpath:"//a[text()='Show All Laptops & Notebooks']"}
-
-#Components hover
-  MICE_AND_TRACKBALLS   =  { xpath:"//a[contains(text(),'Mice and Trackballs')]"}
-  MONITORS              =  { xpath:"//a[contains(text(),'Monitors')]"}
-  PRINTERS              =  { xpath:"//a[contains(text(),'Printers')]"}
-  SCANNERS              =  { xpath:"//a[contains(text(),'Scanners')]"}
-  WEB_CAMERAS           =  { xpath: "//a[contains(text(),'Web Cameras')]"}
-  SHOW_ALL_COMPONENTS   =  { xpath:"//a[text()='Show All Components']"}
-
-#Mp3 Players hover
-  TEST11                =  { xpath: "//a[contains(text(),'test 11')]"}
-  TEST12                =  { xpath: "//a[contains(text(),'test 12')]"}
-  TEST15                =  { xpath: "//a[contains(text(),'test 15')]"}
-  TEST16                =  { xpath: "//a[contains(text(),'test 16')]"}
-  TEST17                =  { xpath: "//a[contains(text(),'test 17')]"}
-  TEST18                =  { xpath: "//a[contains(text(),'test 18')]"}
-  TEST19                =  { xpath: "//a[contains(text(),'test 19')]"}
-  TEST20                =  { xpath: "//a[contains(text(),'test 20')]"}
-  TEST21                =  { xpath: "//a[contains(text(),'test 21')]"}
-  TEST22                =  { xpath: "//a[contains(text(),'test 22')]"}
-  TEST23                =  { xpath: "//a[contains(text(),'test 23')]"}
-  TEST24                =  { xpath: "//a[contains(text(),'test 24')]"}
-  TEST4                 =  { xpath: "//a[contains(text(),'test 4')]"}
-  TEST5                 =  { xpath: "//a[contains(text(),'test 5')]"}
-  TEST6                 =  { xpath: "//a[contains(text(),'test 6')]"}
-  TEST7                 =  { xpath: "//a[contains(text(),'test 7')]"}
-  TEST8                 =  { xpath: "//a[contains(text(),'test 8')]"}
-  TEST9                 =  { xpath: "//a[contains(text(),'test 9')]"}
-  SHOW_ALL_MP3PLAYERS   =  { xpath: "//a[text()='Show All MP3 Players']"}
-
 #========================METHODS=====================================================================================
   attr_reader :driver
 
@@ -99,72 +49,5 @@ end
     true
   rescue Selenium::WebDriver::Error::NoSuchElementError
     false
-  end
-
-  def header_section_elements()
-    matchText(driver.find_element(DESKTOP),"Desktops")
-    matchText(driver.find_element(LAPTOPS),"Laptops & Notebooks")
-    matchText(driver.find_element(COMPONENTS),"Components")
-    matchText(driver.find_element(TABLETS),"Tablets")
-    matchText(driver.find_element(SOFTWARE),"Software")
-    matchText(driver.find_element(PHONE),"Phones and PDAs")
-    matchText(driver.find_element(CAMERA),"Cameras")
-    matchText(driver.find_element(MP3),"MP3 Players")
-  end
-
-  def submenu_for_desktops()
-    driver.find_element(DESKTOP).click
-    matchText(driver.find_element(PC),"PC (0)")
-    matchText(driver.find_element(MAC),"Mac (1)")
-    matchText(driver.find_element(SHOW_ALL_DESKTOPS),"Show All Desktops")
-  end
-
-  def submenu_for_laptops_and_notebooks()
-    driver.find_element(LAPTOPS).click
-    matchText(driver.find_element(MACS),"Macs (0)")
-    matchText(driver.find_element(WINDOWS),"Windows (0)")
-    matchText(driver.find_element(SHOW_ALL_LAPTOPS),"Show All Laptops & Notebooks")
-
-  end
-
-  def submenu_for_components()
-    driver.find_element(COMPONENTS).click
-    matchText(driver.find_element(MICE_AND_TRACKBALLS),"Mice and Trackballs (0)")
-    matchText(driver.find_element(PRINTERS),"Printers (0)")
-    matchText(driver.find_element(SCANNERS),"Scanners (0)")
-    matchText(driver.find_element(MONITORS),"Monitors (2)")
-    matchText(driver.find_element(WEB_CAMERAS),"Web Cameras (0)")
-    matchText(driver.find_element(SHOW_ALL_COMPONENTS),"Show All Components")
-  end
-
-  def submenu_for_mp3player
-    driver.find_element(MP3).click
-    matchText(driver.find_element(TEST4),"test 4 (0)")
-    matchText(driver.find_element(TEST5),"test 5 (0)")
-    matchText(driver.find_element(TEST6),"test 6 (0)")
-    matchText(driver.find_element(TEST7),"test 7 (0)")
-    matchText(driver.find_element(TEST8),"test 8 (0)")
-    matchText(driver.find_element(TEST9),"test 9 (0)")
-    matchText(driver.find_element(TEST11),"test 11 (0)")
-    matchText(driver.find_element(TEST12),"test 12 (0)")
-    matchText(driver.find_element(TEST15),"test 15 (0)")
-    matchText(driver.find_element(TEST16),"test 16 (0)")
-    matchText(driver.find_element(TEST17),"test 17 (0)")
-    matchText(driver.find_element(TEST18),"test 18 (0)")
-    matchText(driver.find_element(TEST19),"test 19 (0)")
-    matchText(driver.find_element(TEST20),"test 20 (0)")
-    matchText(driver.find_element(TEST21),"test 21 (0)")
-    matchText(driver.find_element(TEST22),"test 22 (0)")
-    matchText(driver.find_element(TEST23),"test 23 (0)")
-    matchText(driver.find_element(TEST24),"test 24 (0)")
-matchText(driver.find_element(SHOW_ALL_MP3PLAYERS),"Show All MP3 Players")
-
-  end
-  def matchText(element,value)
-    if element.text==value
-      ;
-         else
-      puts(" Header Elements with text mismatch for #{element.text}");
-    end
   end
 end
