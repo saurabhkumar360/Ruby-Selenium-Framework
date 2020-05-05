@@ -194,9 +194,9 @@ matchText(driver.find_element(SHOW_ALL_MP3PLAYERS),"Show All MP3 Players")
    puts str = count.byteslice(m,n)
 
    if str.include?(itemcount)
-     print "total count is match\n"
+     print "Total Count is Matched\n"
    else
-     print "total count is mismatch\n"
+     print "Total Count is not Matched\n"
    end
   end
 
