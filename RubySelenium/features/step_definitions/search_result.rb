@@ -1,17 +1,12 @@
 
 When("User enter the search items") do
-  @homePage = HomePage.new($driver)
-  @homePage.navigate_opencart_homepage
-  @homePage.enter_search_value 'iphone'
+  @@driver.find_element(css: 'div.input-group > input').send_keys('iphone')
 end
 
 When("User click on search Items") do
-  @homePage.click_search_icon
+  @@driver.find_element(css:'span.input-group-btn > button').click
 end
 
 Then("user navigate on search result page") do
-  @homePage.click_my_account
-  @homePage.click_login
   puts 'Success'
-  sleep 5
 end
