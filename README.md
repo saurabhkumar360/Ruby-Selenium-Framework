@@ -1,7 +1,6 @@
 # Ruby-Selenium-Framework
 
 ### Language Supported- Ruby ###
-### Selenium+Cucumber ###
 
 ## INSTALLATIONS ##
 
