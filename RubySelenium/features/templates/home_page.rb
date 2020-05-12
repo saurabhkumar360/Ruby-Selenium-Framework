@@ -21,10 +21,6 @@ class HOOMEPAGE
     $helperpage.findElement(ShowAllComponents).click
   end
 
-  def getTotalNumOfItems
-    $totalcount = $helperpage.getTotalCount(SearchedItem)
-    puts ("Total number of Items is ..#{$totalcount}")
-  end
 
   def verifySearchItems
     puts count = $helperpage.getTextFromElement(TotalSearchedItems)

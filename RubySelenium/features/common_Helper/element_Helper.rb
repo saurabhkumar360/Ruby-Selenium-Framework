@@ -12,10 +12,6 @@ class ELEMENTHELPER
     puts ("hover on Element #{element}" )
   end
 
-  def getTotalCount(element)
-    return $driver.find_elements(element).size
-
-  end
 
   def getTextFromElement(element)
     return $driver.find_element(element).text
