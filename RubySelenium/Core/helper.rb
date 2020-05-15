@@ -7,6 +7,7 @@ class Core < Test::Unit::TestCase
     chromedriver_path = File.join(File.absolute_path('.', File.dirname(__FILE__)),"../drivers","chromedriver.exe")
     Selenium::WebDriver::Chrome.driver_path = chromedriver_path
     @@driver = Selenium::WebDriver.for :chrome
+    maximize_window
     config = YAML.load_file '../Configuration/config.yml'
     puts config[['applicationUrl']]
     @@driver.get(config['applicationUrl'])
@@ -23,4 +24,7 @@ class Core < Test::Unit::TestCase
   def time_out
     @@driver.manage.timeouts.implicit_wait = 30
   end
+
+
+
 end
